@@ -32,7 +32,7 @@ r2 = 1-2*r            # Diffusion number for matrix
 pi = 3.14159          
 lat = np.arange(0,pi/2,pi/40)
 u = np.sin(lat)
-S = (5-3*u**2)/4  # Initial Condition for Latitudinal Solar Radiation
+S = (5-3*u**2)/4*1000  # Initial Condition for Latitudinal Solar Radiation
 S_initial = np.array([S]).T
 S_old = S_initial
 
